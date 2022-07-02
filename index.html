@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pokemon companion</title>
+    <link rel="stylesheet" href="bulma.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+    />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  </head>
+  <body style="background-color: black">
+    <div id="root">
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a id="btn-pokedex" class="button is-dark"> Pokedex </a>
+              <a id="btn-combat" class="button is-dark"> Combat </a>
+            </div>
+          </div>
+        </div>
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a id="btn-open-login-modal" class="button is-dark7">
+                Connexion
+              </a>
+              <a id="test_rechercher" class="textarea is-link"> </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- le HTML ci-dessous est fourni à titre d'exemple mais devra être
+    supprimé de l'application finale. Bien penser à garder la balise script et
+    les balises fermantes après cette balise script. -->
+
+    <script src="client.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        initClientPokemons();
+      });
+    </script>
+  </body>
+</html>
